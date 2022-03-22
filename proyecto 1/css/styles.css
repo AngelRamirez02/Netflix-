@@ -1,0 +1,324 @@
+/*General*/
+*{
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 400;
+}
+
+h1{
+    font-size: 3.5rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+
+h2{
+    font-size:  2rem;
+}
+h3{
+    font-size: 1.5rem;
+}
+
+section{
+    background: #000000;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-bottom: 8px solid #222;
+}
+
+section div.contenido{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.restaurar{
+    clear: both;
+}
+/**Gneral/
+
+/*Fondo*/
+html,body, .cover{
+    height: 100%;
+}
+
+
+.cover{
+    background-image: url(../img/fondo\ netflix.jpg);
+    background-size: 1400px 707px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+/*cabecera*/
+section.cabecera{
+    background: none;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+}
+
+nav{
+    margin: 0 3.5rem;
+    padding: 26px;
+}
+
+div.logo{
+    width: 100%;
+    height: 100%;
+    float: left;
+    margin-left: 0px;
+    transform: translate(-40px,-40px);
+}
+
+div.login{
+    float: right;
+    transform: translateY(-70px);
+}
+
+div.login:hover{
+    cursor: pointer;
+}
+
+div.login span{
+    padding: 7px 17px;
+    background: #e50914;
+    border-radius: 4px;
+}
+
+.presentacion{
+    align-items: center;
+    text-align: center;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    margin: 5rem;
+}
+
+.presentacion input{
+    height: 50px;
+    width: 500px;
+    margin-top: 8px;
+    margin-bottom: 3px;
+    border-radius: 2px 0px 0px 2px;
+    border:solid 1px #5695e5;
+    padding-left: 11px;
+    color: black;
+}
+
+.presentacion span{
+    background: red;
+    padding: 12px;
+    padding-bottom: 13.75px;
+    font-weight: 500;
+    margin-left: -5px;
+    border:solid #d30f18;
+}
+
+.presentacion span:hover, .contPreguntas span:hover{
+    cursor: pointer;
+}
+/*Cabecera*/
+
+/*TV*/
+.izquierda{
+    float: left;
+}
+
+.derecha{
+    float: right;
+}
+
+.flotantetexto{
+    width: 59%;
+}
+
+.flotanteimagen{
+    width: 39%;
+}
+
+.contenido img{
+    width: 100%;
+    height: auto;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.contenido h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.contenido p{
+    font-size: 25px;
+    font-weight: 200px;
+}
+
+.tv video{
+    position: absolute;
+    transform: translate(-373px, 66px);
+    width: 320px;
+}
+
+.disfruta video{
+    position: absolute;
+    transform: translate(-347px, 39px);
+    width: 263px;
+}
+
+
+.tarjetaInt{
+    display: flex;
+    align-items: center;
+    border: solid 2px #434343;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.portada{
+    display: flex;
+    align-items: center
+}
+
+.tarjetaInt{
+    width: 70%;
+    margin: auto;
+    border: solid 2px #434343;
+    position: relative;
+    z-index: 2;
+    background: black;
+    transform: translate(-50px, -25px)
+}
+
+.tarjeta{
+    position: relative;
+    transform: translate(-65px, -41px);
+}
+
+
+
+/*Preguntas*/
+.preguntas h2{
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.contPreguntas{
+    width: 750px;
+    margin: auto;
+    text-align: center;
+}
+
+.contPreguntas div{
+    text-align: left;
+}
+
+.pregunta{
+    background-color: #303030;
+    padding: 10px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+.respuesta{
+    background-color: #303030;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.pregunta p .respuesta{
+    padding: 10px;
+    padding-left: 20px;
+}
+
+.respuesta hr{
+    border: 1px solid #262626;
+}
+
+.pregunta:hover .respuesta{
+    max-height: 1000px;
+}
+
+
+
+.respuesta{
+    max-height: 0px;
+    overflow: hidden;
+    transition: all .9s;
+}
+
+.contPreguntas input{
+    align-items: center;
+    height: 50px;
+    width: 500px;
+    margin-top: 20px;
+    margin-bottom: 3px;
+    border-radius: 2px 0px 0px 2px;
+    border:solid 1px #5695e5;
+    padding-left: 11px;
+    color: black;
+}
+
+.contPreguntas span{
+    background: red;
+    padding: 12px;
+    padding-bottom: 13.5px;
+    font-weight: 500;
+    margin-left: -5px;
+    border:solid #d30f18;
+}
+
+.contPreguntas h3{
+    text-align: center;
+    margin-top: 70px;;
+    font-size: 1.7rem;
+}
+
+.pieContenido{
+    width: 1100px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+
+.pie p{
+    padding: 5px;
+}
+
+.pie .espacio{
+    width: 100px;
+}
+/*secion de niños*/
+.alinear{
+    width: 100%;
+    height: auto;
+    border: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.alinear h2{
+    font-weight: bold;
+    font-size: 50px;
+}
+
+.alinear p{
+    font-size: 25px;
+    font-weight: 200px;
+}
+
+.alinear img{
+    transform: translate(130px);
+    width: 90%;
+}
